@@ -1,6 +1,6 @@
 import './App.css';
 import { Profile } from './components/Profile/Profile';
-import user from './data/Profile/user.json'
+import user from './data/Profile/user.json';
 
 function App() {
   return (
@@ -10,7 +10,8 @@ function App() {
         tag={user.tag}
         location={user.location}
         avatar={user.avatar}
-        stats={user.stats}/>
+        stats={user.stats}
+      />
     </div>
   );
 }
