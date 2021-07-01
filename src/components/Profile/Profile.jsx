@@ -15,7 +15,7 @@ export function Profile(user) {
   return (
     <Container>
       <Description>
-        <Avatar src={user.avatar} />
+        <Avatar src={user.avatar} alt={user.name} />
         <Name>{user.name}</Name>
         <Tag>@{user.tag}</Tag>
         <Location>{user.location}</Location>

@@ -7,6 +7,7 @@ export const StatisticsSection = styled.section`
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 35px;
 `;
 
 export const TitleSection = styled.h2`
@@ -14,6 +15,7 @@ export const TitleSection = styled.h2`
   align-items: center;
   justify-content: center;
   height: 70px;
+  margin: 0;
 
   text-transform: uppercase;
   font-weight: 600;
@@ -25,6 +27,7 @@ export const StatsList = styled.ul`
   list-style: none;
   display: flex;
   padding: 0;
+  margin: 0;
 `;
 
 export const StatsListItem = styled.li`
