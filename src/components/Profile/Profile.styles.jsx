@@ -1,11 +1,8 @@
 import styled from '@emotion/styled';
-
-const mainTextColor = '#000000';
-const secondaryTextColor = '#929292';
-const borderColor = '#E9EDF2';
+import { colorsVars } from '../../utils/colors';
 
 export const Container = styled.div`
-  background-color: #ffffff;
+  background-color: ${colorsVars.sectionBackgroundColor};
   width: 250px;
   margin-top: 30px;
   margin-left: auto;
@@ -28,7 +25,7 @@ export const Avatar = styled.img`
 `;
 
 export const Name = styled.p`
-  color: ${mainTextColor};
+  color: ${colorsVars.mainTextColor};
   margin-top: 0;
   margin-bottom: 15px;
   font-size: 20px;
@@ -36,14 +33,14 @@ export const Name = styled.p`
 `;
 
 export const Tag = styled.p`
-  color: ${secondaryTextColor};
+  color: ${colorsVars.secondaryTextColor};
   margin-top: 0;
   margin-bottom: 15px;
 `;
 
 export const Location = styled.p`
   margin: 0;
-  color: ${secondaryTextColor};
+  color: ${colorsVars.secondaryTextColor};
 `;
 
 export const Stats = styled.ul`
@@ -51,7 +48,7 @@ export const Stats = styled.ul`
   margin: 0;
   padding: 0;
   display: flex;
-  border-top: 1px solid ${borderColor};
+  border-top: 1px solid ${colorsVars.borderColor};
 `;
 
 export const StatsItem = styled.li`
@@ -65,15 +62,15 @@ export const StatsItem = styled.li`
   background-color: #f3f6f9;
 
   :not(:last-child) {
-    border-right: 1px solid ${borderColor};
+    border-right: 1px solid ${colorsVars.borderColor};
   }
 `;
 
 export const Label = styled.span`
-  color: ${secondaryTextColor};
+  color: ${colorsVars.secondaryTextColor};
 `;
 
 export const Quantity = styled.span`
-  color: ${mainTextColor};
+  color: ${colorsVars.mainTextColor};
   font-weight: 600;
 `;

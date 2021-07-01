@@ -1,13 +1,47 @@
 import styled from '@emotion/styled';
+import { colorsVars } from '../../utils/colors';
 
-export const statisticsSection = styled.section``;
+export const StatisticsSection = styled.section`
+  background-color: ${colorsVars.sectionBackgroundColor};
+  height: fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+`;
 
-export const titleSection = styled.h2``;
+export const TitleSection = styled.h2`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
 
-export const statsList = styled.ul``;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  color: ${colorsVars.secondaryTextColor};
+`;
 
-export const statsListItem = styled.li``;
+export const StatsList = styled.ul`
+  list-style: none;
+  display: flex;
+  padding: 0;
+`;
 
-export const labelSection = styled.span``;
+export const StatsListItem = styled.li`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 60px;
 
-export const percentageSection = styled.span``;
+  background-color: ${colorsVars.randomColor};
+`;
+
+export const LabelSection = styled.span`
+  color: ${colorsVars.sectionBackgroundColor};
+`;
+
+export const PercentageSection = styled.span`
+  color: ${colorsVars.sectionBackgroundColor};
+`;

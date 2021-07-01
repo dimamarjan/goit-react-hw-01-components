@@ -1,22 +1,28 @@
 import {
-  statisticsSection,
-  titleSction,
-  statsList,
-  statsListItem,
-  labelSection,
-  percentageSection,
+  StatisticsSection,
+  TitleSection,
+  StatsList,
+  StatsListItem,
+  LabelSection,
+  PercentageSection,
 } from './Statistics.style';
 
 export function Statistics(statisticData) {
   return (
-    <statisticsSection>
-      <titleSction></titleSction>
-      <statsList>
-        <statsListItem>
-          <labelSection></labelSection>
-          <percentageSection></percentageSection>
-        </statsListItem>
-      </statsList>
-    </statisticsSection>
+    <StatisticsSection>
+      {statisticData.title ? (
+        <TitleSection>{statisticData.title}</TitleSection>
+      ) : (
+        ''
+      )}
+      <StatsList>
+        {statisticData.stats.map(element => (
+          <StatsListItem key={element.id}>
+            <LabelSection>{element.label}</LabelSection>
+            <PercentageSection>{element.percentage}</PercentageSection>
+          </StatsListItem>
+        ))}
+      </StatsList>
+    </StatisticsSection>
   );
 }
