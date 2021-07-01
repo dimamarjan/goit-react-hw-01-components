@@ -26,7 +26,7 @@ function App() {
       {/* task 3 */}
       <FriendList friends={friends} />
       {/* task 4 */}
-      <TransactionHistory items={transactions} />;
+      <TransactionHistory items={transactions} />
     </div>
   );
 }
